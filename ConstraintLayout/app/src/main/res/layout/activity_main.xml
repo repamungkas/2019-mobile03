@@ -3,14 +3,28 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	android:background="#C00D0D"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
 	tools:context=".MainActivity">
 
-	<androidx.constraintlayout.widget.Guideline
-		android:id="@+id/guideline4"
+	<Button
+		android:id="@+id/button5"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Top"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:layout_editor_absoluteX="16dp" />
+
+	<Button
+		android:id="@+id/button6"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:orientation="horizontal"
-		app:layout_constraintGuide_begin="295dp" />
+		android:text="Button"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.086" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
